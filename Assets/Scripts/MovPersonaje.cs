@@ -26,7 +26,7 @@ public class MovPersonaje : MonoBehaviour
 
         respawn = GameObject.Find("Respawn");
 
-        transform.position = respawn.transform.position;
+        Respawnear();
     }
 
     // Update is called once per frame
@@ -90,4 +90,20 @@ public class MovPersonaje : MonoBehaviour
         //puedoSaltar = true;
         //Debug.Log("Collision");
         //}
+
+
+
+
+
+        //comprobar si me he caido
+        if(transform.position.y <= -7){
+            Respawnear();
+        }
+
+
+
+
+        public void Respawnear(){
+            transform.position = respawn.transform.position;
+        }
 }
