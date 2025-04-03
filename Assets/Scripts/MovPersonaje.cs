@@ -15,6 +15,8 @@ public class MovPersonaje : MonoBehaviour
 
     private Animator animatorController;
 
+    GameObject respawn;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +24,9 @@ public class MovPersonaje : MonoBehaviour
 
         animatorController = GetComponent<Animator>();
 
-        transform.position = new Vector3(-7.1f, -1.0f, 0);
+        respawn = GameObject.Find("Respawn");
+
+        transform.position = respawn.transform.position;
     }
 
     // Update is called once per frame
