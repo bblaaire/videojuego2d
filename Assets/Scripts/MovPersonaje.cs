@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class MovPersonaje : MonoBehaviour
 {
-    
+    public bool direccionBalaDerecha = true;
+
     public float multiplicador = 5f;
 
     public float multiplicadorSalto = 5f;
@@ -26,7 +27,7 @@ public class MovPersonaje : MonoBehaviour
 
         respawn = GameObject.Find("Respawn");
 
-        Respawnear();
+        
     }
 
     // Update is called once per frame
@@ -51,9 +52,11 @@ public class MovPersonaje : MonoBehaviour
         //flip izq
         if(movTeclas < 0){
             this.GetComponent<SpriteRenderer>().flipX = true;
+            direccionBalaDerecha = true;
         }else if (movTeclas > 0){
         //dcha
             this.GetComponent<SpriteRenderer>().flipX = false;
+            direccionBalaDerecha = false;
         }
 
         //Animacion walking
@@ -96,14 +99,5 @@ public class MovPersonaje : MonoBehaviour
 
 
         //comprobar si me he caido
-        if(transform.position.y <= -7){
-            Respawnear();
-        }
-
-
-
-
-        public void Respawnear(){
-            transform.position = respawn.transform.position;
-        }
+       
 }
