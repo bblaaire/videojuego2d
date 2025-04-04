@@ -17,11 +17,11 @@ public class Bala : MonoBehaviour
 
                
         if(player.GetComponent<MovPersonaje>().direccionBalaDerecha == true){
-            velocidad = velocidad*1;
+            velocidad = velocidad*-1;
         }
 
         if(player.GetComponent<MovPersonaje>().direccionBalaDerecha == false){
-           velocidad = velocidad*-1;
+           velocidad = velocidad*1;
         }
 
     }

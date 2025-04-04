@@ -26,6 +26,7 @@ public class MovPersonaje : MonoBehaviour
         animatorController = GetComponent<Animator>();
 
         respawn = GameObject.Find("Respawn");
+        transform.position = respawn.transform.position;
 
         
     }
@@ -88,6 +89,14 @@ public class MovPersonaje : MonoBehaviour
             );
             //puedoSaltar = false;
         }
+
+    //a ver si caigo y salgo otra vez
+        if(transform.position.y <= -7){
+            Respawnear();
+        }
+
+
+
     }
     //void OnCollisionEnter2D(){
         //puedoSaltar = true;
@@ -99,5 +108,17 @@ public class MovPersonaje : MonoBehaviour
 
 
         //comprobar si me he caido
+
+
+        //Respawnear
+    public void Respawnear(){
+
+        Debug.Log("vidas: "+GameManager.vidas);
+        GameManager.vidas = GameManager.vidas - 1;
+         Debug.Log("vidas: "+GameManager.vidas);
+
+        transform.position = respawn.transform.position;
+
+    }
        
 }
