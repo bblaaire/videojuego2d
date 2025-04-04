@@ -7,6 +7,8 @@ public class GameManager : MonoBehaviour
 
 
     public static int vidas = 3;
+    public static bool EstoyMuerto = false;
+
     // Start is called before the first frame update
     void Start()
     {

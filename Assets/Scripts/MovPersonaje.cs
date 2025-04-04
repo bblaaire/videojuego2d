@@ -17,6 +17,7 @@ public class MovPersonaje : MonoBehaviour
     private Animator animatorController;
 
     GameObject respawn;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -34,6 +35,8 @@ public class MovPersonaje : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        if(GameManager.EstoyMuerto)return;
         
         //movimiento
         float movTeclas = Input.GetAxis("Horizontal");
@@ -94,6 +97,13 @@ public class MovPersonaje : MonoBehaviour
         if(transform.position.y <= -7){
             Respawnear();
         }
+
+        //0 vidas
+        if(GameManager.vidas <= 0)
+        {
+            GameManager.EstoyMuerto = true;
+        }
+
 
 
 
