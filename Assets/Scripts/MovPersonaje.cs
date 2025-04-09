@@ -36,7 +36,7 @@ public class MovPersonaje : MonoBehaviour
     void Update()
     {
 
-        if(GameManager.EstoyMuerto)return;
+        if(GameManager.estoyVivo)return;
         
         //movimiento
         float movTeclas = Input.GetAxis("Horizontal");
@@ -101,7 +101,7 @@ public class MovPersonaje : MonoBehaviour
         //0 vidas
         if(GameManager.vidas <= 0)
         {
-            GameManager.EstoyMuerto = true;
+            GameManager.estoyVivo = true;
         }
 
 
