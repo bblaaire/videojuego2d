@@ -20,6 +20,7 @@ public class Fantasma : MonoBehaviour
     void Update()
     {
         if(vidaFantasma <= 0){
+            
             Destroy(this.gameObject);
         }
     
@@ -41,6 +42,8 @@ public class Fantasma : MonoBehaviour
 
     }
 
-
+     if(distancia <= 4.1f){
+         AudioManager.Instance.SonarClipUnaVez(AudioManager.Instance.fxGhost);
+     }
     }
 }

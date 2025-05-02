@@ -99,6 +99,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e32425227a64942af99c47621c2e6fd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  velocidadFantasma: 3
+  vidaFantasma: 10
 --- !u!70 &7677594882744381800
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -142,7 +144,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 866639767958539673}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0

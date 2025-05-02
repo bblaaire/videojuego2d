@@ -20,6 +20,7 @@ public class Goals : MonoBehaviour
     { 
         if (col.tag == "Player"){
             this.GetComponent<Animator>().SetBool("DestruirMoneda", true);
+            AudioManager.Instance.SonarClipUnaVez(AudioManager.Instance.fxCoin);
             Destroy(this.gameObject, 1f);
         }
 

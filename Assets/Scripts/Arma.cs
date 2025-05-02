@@ -20,6 +20,7 @@ public class Arma : MonoBehaviour
     {
         
         if (Input.GetKeyDown(KeyCode.E)){ 
+            AudioManager.Instance.SonarClipUnaVez(AudioManager.Instance.fxFire);
             GameObject balaClone = Instantiate(bala, new Vector3(transform.position.x, transform.position.y, 0), Quaternion.identity);
             
         }

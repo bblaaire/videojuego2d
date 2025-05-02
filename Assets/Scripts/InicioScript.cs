@@ -40,5 +40,8 @@ public class InicioScript : MonoBehaviour
         panelSettings.SetActive(false);
     }
 
+    public void SuenaBoton(){
+        AudioManager.Instance.SonarClipUnaVez(AudioManager.Instance.fxButton);
+    }
 
 }

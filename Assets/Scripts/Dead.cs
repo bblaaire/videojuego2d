@@ -27,6 +27,7 @@ public class Dead : MonoBehaviour
 
         if(col.name == "Player")
         {
+            AudioManager.Instance.SonarClipUnaVez(AudioManager.Instance.fxDead);
             movPersonaje.Respawnear();
         }
     }
