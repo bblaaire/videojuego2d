@@ -9,6 +9,8 @@ public class GameManager : MonoBehaviour
 
     public static int vidas = 10;
     public static int marcador = 0;
+    public static int puntos = 0;
+    public static int muertes = 0;
     public static bool estoyMuerto = false;
 
     private GameObject vidasText;
@@ -22,6 +24,8 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log("Puntos:"+puntos);
+
         if( vidas <= 0){
             estoyMuerto = true;
         }

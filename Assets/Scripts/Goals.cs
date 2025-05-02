@@ -22,6 +22,10 @@ public class Goals : MonoBehaviour
             this.GetComponent<Animator>().SetBool("DestruirMoneda", true);
             Destroy(this.gameObject, 1f);
         }
+
+        if (col.tag == "Player"){
+            GameManager.puntos += 1;
+            
     }
 
-}
+}}

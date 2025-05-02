@@ -43,7 +43,7 @@ public class MovPersonaje : MonoBehaviour
 
         float miDeltaTime = Time.deltaTime;
 
-        Debug.Log(Time.deltaTime);
+        //Debug.Log(Time.deltaTime);
 
        // transform.Translate(
           // movTeclas*(Time.deltaTime*multiplicador),
