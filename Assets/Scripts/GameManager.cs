@@ -7,13 +7,14 @@ public class GameManager : MonoBehaviour
 {
 
 
-    public static int vidas = 10;
+    public static int vidas = 3;
     public static int marcador = 0;
     public static int puntos = 0;
     public static int muertes = 0;
+    GameObject vidasText;
     public static bool estoyMuerto = false;
 
-    private GameObject vidasText;
+    
 
     // Start is called before the first frame update
     void Start()
