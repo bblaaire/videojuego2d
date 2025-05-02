@@ -28,8 +28,12 @@ public class GameManager : MonoBehaviour
         Debug.Log("Puntos:"+puntos);
 
         if( vidas <= 0){
+            AudioManager.Instance.SonarClipUnaVez(AudioManager.Instance.fxHeartBeat);
             estoyMuerto = true;
         }
         vidasText.GetComponent<TextMeshProUGUI>().text = vidas.ToString();
+
     }
+
+    
 }

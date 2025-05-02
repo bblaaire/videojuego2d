@@ -12,6 +12,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip fxDead;
     public AudioClip fxFire;
     public AudioClip fxGhost;
+    public AudioClip fxHeartBeat;
 
     AudioSource _audioSource;
 

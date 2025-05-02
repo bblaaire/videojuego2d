@@ -1553,6 +1553,7 @@ MonoBehaviour:
   fxCoin: {fileID: 8300000, guid: 80b52993a15b04189a262be69949c402, type: 3}
   fxDead: {fileID: 8300000, guid: 98656b932f04c47319ee1a81dce62f55, type: 3}
   fxFire: {fileID: 8300000, guid: c450b7e7c65aa4261bd77f28d7d10d9a, type: 3}
+  fxGhost: {fileID: 0}
 --- !u!4 &652083694
 Transform:
   m_ObjectHideFlags: 0

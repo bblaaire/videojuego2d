@@ -673,6 +673,7 @@ MonoBehaviour:
   fxDead: {fileID: 8300000, guid: 98656b932f04c47319ee1a81dce62f55, type: 3}
   fxFire: {fileID: 8300000, guid: c450b7e7c65aa4261bd77f28d7d10d9a, type: 3}
   fxGhost: {fileID: 8300000, guid: 66eb8f95b5465441186e5c8ee84d4104, type: 3}
+  fxHeartBeat: {fileID: 8300000, guid: 488fb2b6fc44e4b64a729da7b43667d0, type: 3}
 --- !u!4 &1233557319
 Transform:
   m_ObjectHideFlags: 0

@@ -33,11 +33,12 @@ public class Fantasma : MonoBehaviour
     //si la distancia es mayor de 4 no me sigue
     if(distancia <= 4.1f){
         //se mueve
+        this.GetComponent<SpriteRenderer>().flipX = false;
 
         transform.position = Vector3.MoveTowards(transform.position,personaje.transform.position, velocidadFinal);
 
     }else{
-        
+        this.GetComponent<SpriteRenderer>().flipX = true;
         transform.position = Vector3.MoveTowards(transform.position, posicionInicial, velocidadFinal);
 
     }
